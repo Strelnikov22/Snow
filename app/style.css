@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Raleway&display=swap");
+.first-screen, .apps__top {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden; }
+
+.header, .header .menu, .first-screen__button, .apps__bottom {
+  display: flex; }
+
+.apps__top h2, .pricing h2 {
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 40px; }
+
+.first-screen__content h6, .apps__top h6, .pricing h6 {
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 21px; }
+
+.apps__bottom .item p, .pricing__item .content p, .pricing__item .content h5, .pricing__item .content a {
+  color: #929496;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 17px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%; }
+
+.container {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: inherit;
+  justify-content: center; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+.header {
+  left: 150px;
+  right: 150px;
+  padding: 20px 0px;
+  position: absolute;
+  justify-content: space-between; }
+  .header .menu {
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center; }
+    .header .menu a {
+      display: block; }
+    .header .menu__item {
+      margin-left: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px; }
+      .header .menu__item a {
+        color: #fff; }
+
+.first-screen {
+  background-image: url(img/header_bg.jpg);
+  min-height: 892px;
+  height: inherit; }
+  .first-screen__content {
+    max-width: 1000px;
+    color: #fff;
+    text-align: center; }
+    .first-screen__content h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 55px; }
+    .first-screen__content h6 {
+      margin-top: 20px; }
+    .first-screen__content .mouse img {
+      margin-top: 30px; }
+  .first-screen__button {
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; }
+    .first-screen__button a {
+      width: 175px;
+      padding: 20px 0px;
+      margin: 0px 15px;
+      background-color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      color: #929496;
+      text-transform: uppercase;
+      border-radius: 5px;
+      transition-duration: 0.4s; }
+      .first-screen__button a:hover {
+        background-color: #70CBCE;
+        color: #fff; }
+
+.apps .container {
+  align-items: inherit; }
+.apps__top {
+  background-image: url(img/apps_bg.jpg);
+  height: 715px; }
+  .apps__top h2 {
+    margin: 77px 0px 15px 0px; }
+  .apps__top h6 {
+    margin: 15px 0px 67px 0px; }
+  .apps__top .phone {
+    width: 504px;
+    height: 710px;
+    position: absolute;
+    left: 33%;
+    right: 33%; }
+.apps__bottom {
+  padding: 400px 100px 200px 100px; }
+  .apps__bottom .item {
+    margin: 0px 20px; }
+    .apps__bottom .item:nth-child(1) {
+      border-top: 4px solid #6D3F96; }
+    .apps__bottom .item:nth-child(2) {
+      border-top: 4px solid #70CBCE; }
+    .apps__bottom .item:nth-child(3) {
+      border-top: 4px solid #FDC05D; }
+    .apps__bottom .item h6 {
+      margin: 15px 0px;
+      color: #231F20;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 17px; }
+
+.pricing {
+  padding-bottom: 200px;
+  background-color: #70CBCE; }
+  .pricing .container {
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .pricing h2 {
+    margin: 77px 0px 30px 0px;
+    flex-basis: 100%; }
+  .pricing h6 {
+    margin-bottom: 60px;
+    flex-basis: 100%; }
+  .pricing__item {
+    width: 380px;
+    margin: 0px 15px; }
+    .pricing__item .head {
+      text-align: center;
+      background-color: #231F20;
+      color: #fff;
+      border-radius: 10px 10px 0px 0px; }
+      .pricing__item .head h6 {
+        margin: 0;
+        padding: 20px 0px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 14px; }
+      .pricing__item .head h5 {
+        background-color: rgba(196, 196, 196, 0.1);
+        padding: 5px 0px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 35px; }
+        .pricing__item .head h5 span {
+          color: #727272;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-size: 21px; }
+    .pricing__item .content {
+      background-color: #fff;
+      text-align: center; }
+      .pricing__item .content p {
+        padding: 20px;
+        border-bottom: 1px dashed #E8EAEA; }
+      .pricing__item .content h5 {
+        padding: 15px 20px;
+        border-bottom: 1px dashed #E8EAEA;
+        font-weight: 800;
+        color: #231F20; }
+      .pricing__item .content a {
+        background-color: rgba(196, 196, 196, 0.3);
+        font-weight: 800;
+        color: #70CBCE;
+        padding: 20px;
+        display: block;
+        text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */

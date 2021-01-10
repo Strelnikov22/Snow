@@ -1,0 +1,90 @@
+
+// ------------ШАПКА---------
+
+.header{
+    left: 150px;
+    right: 150px;
+    padding: 20px 0px;
+    position: absolute;
+    @extend %flex-active;
+    justify-content: space-between;
+
+    .menu {
+        @extend %flex-active;
+        justify-content: flex-end;
+        flex-grow:1;
+        align-items: center;
+        a{
+            display: block;
+        }
+        &__item{
+            margin-left: 10px;
+            font: {
+                family: $font_Montserrat;
+                size: 14px;
+            }
+            a{
+                color: $white;
+            }
+            
+        }
+    }
+}
+
+//--------------Первая Секция----------- 
+
+.first-screen{
+    background-image: url(img/header_bg.jpg);
+    @extend %bg;
+    min-height: 892px;
+    height: inherit;
+
+
+    &__content{
+        max-width: 1000px;
+        color: $white;
+        text-align: center;
+        h1{
+            font: {
+                family: $font_Montserrat;
+                weight: 800;
+                size: 55px;
+            }
+        }
+        h6{
+            margin-top: 20px;
+            @extend %for_h6;
+        }
+        .mouse{
+            img{
+                margin-top: 30px;
+            }
+        }
+        
+    }
+    &__button{
+        @extend %flex-active;
+        justify-content:center;
+        align-items: center;
+        margin-top: 30px;
+        a{
+            width: 175px;
+            padding: 20px 0px;
+            margin: 0px 15px;
+            background-color: $white;
+            font: {
+                family: $font_Montserrat;
+                size: 14px;
+            }
+            color: $gray;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+            &:hover{
+                background-color: $blue_lite;
+                color: $white;
+            }
+        }
+    }
+    
+}

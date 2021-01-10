@@ -1,0 +1,54 @@
+.apps{
+    .container{
+        align-items:inherit;
+    }
+    &__top{
+        background-image: url(img/apps_bg.jpg);
+        @extend %bg;
+        height: 715px;
+       
+        h2{
+            margin: 77px 0px 15px 0px;
+            @extend %for_h2;
+        }
+        h6{
+            @extend %for_h6;
+            margin: 15px 0px 67px 0px;
+        }
+        .phone{
+            width: 504px;
+            height: 710px;
+            position: absolute;
+            left: 33%;
+            right: 33%;
+        }
+    }
+    &__bottom{
+        @extend %flex-active;
+        padding: 400px 100px 200px 100px;
+        .item{
+            margin: 0px 20px;
+            &:nth-child(1){
+                border-top: 4px solid $purple;
+            }
+            &:nth-child(2){
+                border-top: 4px solid $blue_lite;
+            }
+            &:nth-child(3){
+                border-top: 4px solid $yellow;
+            }
+            h6{
+                margin: 15px 0px;
+                color: $black;
+                font:{
+                    family: $font_Montserrat;
+                    weight: 700;
+                    size: 17px;
+                } 
+            }
+            p{
+                @extend %for_p;
+            }
+        }
+    }
+}

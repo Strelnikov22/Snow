@@ -1,0 +1,82 @@
+.pricing{
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    padding-bottom: 200px;
+    background-color: $blue_lite;
+    h2{
+        margin: 77px 0px 30px 0px;
+        @extend %for_h2;
+        flex-basis: 100%;
+    }
+    h6{
+        margin-bottom: 60px;
+        @extend %for_h6;
+        flex-basis: 100%;
+    }
+
+    &__item{
+        width: 380px;
+        margin: 0px 15px;
+        .head{
+            text-align: center;
+            background-color: $black;
+            color: $white;
+            border-radius: 10px 10px 0px 0px;
+            h6{
+                margin: 0;
+                padding: 20px 0px;
+                font:{
+                    family: $font_Montserrat;
+                    weight: 400;
+                    size: 14px;
+                } 
+            }
+            h5{
+                background-color: rgba(196, 196, 196, 0.1);
+                padding: 5px 0px;
+                font:{
+                    family: $font_Montserrat;
+                    weight: 700;
+                    size: 35px;
+                } 
+                span{
+                    color: rgb(114, 114, 114);
+                    font:{
+                        family: $font_Montserrat;
+                        weight: 400;
+                        size: 21px;
+                    } 
+                }
+            }
+        }
+        .content{
+            background-color: $white;
+            text-align: center;
+            p{
+                @extend %for_p;
+                padding: 20px;
+                border-bottom: 1px dashed #E8EAEA;
+            }
+            h5{
+                padding: 15px 20px;
+                border-bottom: 1px dashed #E8EAEA;
+                @extend %for_p;
+                font-weight: 800;
+                color: $black;
+            }
+            a{
+                background-color:rgba(196, 196, 196, 0.3);
+                @extend %for_p;
+                font-weight: 800;
+                color: $blue_lite;
+                padding: 20px;
+                display: block;
+                text-transform: uppercase;
+            }
+            
+        }
+        
+    }
+}
