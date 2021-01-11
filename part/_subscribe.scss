@@ -1,0 +1,62 @@
+.subscribe{
+    background-color: #F2F2F2;
+    padding: 200px 0px;
+    @include tablet{
+        padding: 200px 25px;
+    }
+    @include mobile{
+        padding: 110px 25px;
+    }
+    h2{
+        margin: 30px 0px;
+        @extend %for_h2;
+        color: $black;
+    }
+    h6{
+        @extend %for_h6;
+        color: $black;
+    }
+    &__mail{
+        box-sizing: border-box;
+        padding: 0px 35px;
+        width: 380px;
+        height: 55px;
+        border-radius: 3px;
+        border: 0;
+        @extend %for_h6;
+        color: $gray;
+        text-align: left;
+        margin: 60px 0px 30px 0px;
+        @include tablet{
+            width: 475px;
+        }
+        @include mobile{
+            width: 364px;
+        }
+    }
+    &__submit{
+        cursor: pointer; 
+        padding: 20px;
+        background-color: $blue_lite;
+        font:{
+            family: $font_Montserrat;
+            weight: 400;
+            size: 14px;
+        } 
+        color: $white;
+        text-transform: uppercase;
+        border: 0;
+        border-radius: 4px;
+        transition-duration: 0.4s;
+        &:hover{
+            background-color: $white;
+            color: $gray;
+        }
+        @include tablet{
+            width: 225px;
+        }
+    }
+    img{
+        width: 107px;
+    }
+}

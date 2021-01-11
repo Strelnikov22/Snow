@@ -6,7 +6,12 @@
         background-image: url(img/apps_bg.jpg);
         @extend %bg;
         height: 715px;
-       
+        @include tablet{
+            padding: 0px 25px;
+        }
+        @include mobile{
+            height: auto;
+        }
         h2{
             margin: 77px 0px 15px 0px;
             @extend %for_h2;
@@ -19,15 +24,36 @@
             width: 504px;
             height: 710px;
             position: absolute;
-            left: 33%;
-            right: 33%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            @include tablet{
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+            @include mobile{
+                display: none;
+            }
         }
     }
     &__bottom{
         @extend %flex-active;
         padding: 400px 100px 200px 100px;
+        @include tablet{
+            flex-direction: column;
+            padding: 300px 150px 100px 150px;
+        }
+        @include mobile{
+            padding: 30px 25px 30px 25px;
+        }
+        
         .item{
             margin: 0px 20px;
+            @include tablet{
+                margin: 0px 0px 30px 0px;
+            }
+            @include mobile{
+                margin: 30px 0px 30px 0px;
+            }
             &:nth-child(1){
                 border-top: 4px solid $purple;
             }

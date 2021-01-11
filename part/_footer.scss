@@ -1,0 +1,29 @@
+.footer{
+    padding: 120px;
+    @include mobile{
+        padding: 100px 25px;
+    }
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+        @include tablet{
+            flex-direction: column;
+        }
+        p{
+            @extend %for_h6;
+            color: $gray;
+        }
+    }
+    &__icon{
+        @extend %flex-active;
+        @include tablet{
+            margin-top: 30px;
+        }
+        li{
+            margin-left: 20px;
+            @include tablet{
+                margin: 0px 10px;
+            }
+        }
+    }
+}

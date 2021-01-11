@@ -48,3 +48,15 @@ $yellow: #FDC05D;
         size: 17px;
     } 
 }
+
+@mixin tablet() {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
