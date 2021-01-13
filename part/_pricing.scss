@@ -25,6 +25,11 @@
     &__item{
         width: 380px;
         margin: 15px 15px;
+        transition-duration: 0.4s;
+        &:hover{
+            transform: scale(1.16);
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+        }
         @include tablet{
             width: 474px;
             margin: 15px 0px;
@@ -32,6 +37,7 @@
         @include mobile{
             width: 366px;
         }
+        
         .head{
             text-align: center;
             background-color: $black;

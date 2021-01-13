@@ -206,7 +206,11 @@ li {
     flex-basis: 100%; }
   .pricing__item {
     width: 380px;
-    margin: 15px 15px; }
+    margin: 15px 15px;
+    transition-duration: 0.4s; }
+    .pricing__item:hover {
+      transform: scale(1.16);
+      filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4)); }
     @media screen and (max-width: 768px) {
       .pricing__item {
         width: 474px;
